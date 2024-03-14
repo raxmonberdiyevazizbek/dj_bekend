@@ -11,7 +11,7 @@ class smartfon(models.Model):
         memory =models.IntegerField()
         name   =models.CharField(max_length=255)
         model  =models.CharField(max_length=255)
-        data   =models.DateField()
+        # data   =models.DateField()
 
         def __str__(self):
             return self.name 
@@ -30,5 +30,5 @@ class smartfon(models.Model):
                 'memory': self.memory,
                 'name': self.name,
                 'model': self.model,
-                'data' :self.data,
+                # 'data' :self.data,
             }
